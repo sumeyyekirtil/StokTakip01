@@ -36,8 +36,8 @@
 			meyveler.Tur = "Meyve"; //Tur Stok class ının kalıtımdan dolayı kullanılabilir
 			Console.WriteLine("Stok Türü: " + meyveler.Tur);
 			meyveler.KontrolEt();//stok sınıfından geliyor
-
 			Console.WriteLine();
+
 			Kategori yeniUrun = new()
 			{
 				Id = 1,
@@ -48,9 +48,10 @@
 			};
 			if (yeniUrun.UstMenu == true)
 			{
-				Console.WriteLine($"kategori detayı : \n Adı: {yeniUrun.Ad} \n Kullanış Durumu: {yeniUrun.Bozukmu} Eklenme Tarihi : {yeniUrun.CreateTime}"); //$ : yeniUrun değişkenini aktif eder
+				Console.WriteLine($"Kategori detayı : \n\n Adı: {yeniUrun.Ad} \n Kullanış Durumu: {yeniUrun.Bozukmu} \n Eklenme Tarihi : {yeniUrun.CreateTime}"); //$ : yeniUrun değişkenini aktif eder
 			}
 			Console.WriteLine();
+
 			Kategori yeniUrun2 = new()
 			{
 				Id = 2,
@@ -62,9 +63,10 @@
 			};
 			if (yeniUrun2.YanMenu == true)
 			{
-				Console.WriteLine($"kategori detayı : \n Adı: {yeniUrun2.Ad} \n Eklenme Tarihi : {yeniUrun2.CreateTime}");
+				Console.WriteLine($"Kategori detayı : \n\n Adı: {yeniUrun2.Ad} \n Eklenme Tarihi : {yeniUrun2.CreateTime}");
 			}
 			Console.WriteLine();
+
 			Kategori yeniUrun3 = new()
 			{
 				Id = 3,
@@ -74,13 +76,13 @@
 				YanMenu = true,
 				CreateTime = DateTime.Now,
 			};
-			Console.WriteLine();
 			Console.WriteLine("Ürün Detayı:");
-			Console.WriteLine($"Adı : {yeniUrun3.Ad}");
-			Console.WriteLine($"Bölüm Adı : {yeniUrun3.BolumAdi}");
-			Console.WriteLine($"Kilo : {yeniUrun3.Kilo}");
-			Console.WriteLine($"Giriş Tarihi : {yeniUrun3.CreateTime}");
+			Console.WriteLine($"\n Adı : {yeniUrun3.Ad}");
+			Console.WriteLine($" Bölüm Adı : {yeniUrun3.BolumAdi}");
+			Console.WriteLine($" Kilo : {yeniUrun3.Kilo}");
+			Console.WriteLine($" Giriş Tarihi : {yeniUrun3.CreateTime}");
 			Console.WriteLine();
+
 			Kategori yeniUrun4 = new()
 			{
 				Id = 4,
@@ -92,11 +94,11 @@
 				CreateTime = DateTime.Now,
 			};
 			Console.WriteLine("Ürün Detayı:");
-			Console.WriteLine($"Adı : {yeniUrun4.Ad}");
-			Console.WriteLine($"Bölüm Adı : {yeniUrun4.BolumAdi}");
-			Console.WriteLine($"Kilo : {yeniUrun4.Kilo}");
-			Console.WriteLine($"Kullanış Durumu : {yeniUrun4.Bozukmu}");
-			Console.WriteLine($"Giriş Tarihi : {yeniUrun4.CreateTime}");
+			Console.WriteLine($"\n Adı : {yeniUrun4.Ad}");
+			Console.WriteLine($" Bölüm Adı : {yeniUrun4.BolumAdi}");
+			Console.WriteLine($" Kilo : {yeniUrun4.Kilo}");
+			Console.WriteLine($" Kullanış Durumu : {yeniUrun4.Bozukmu}");
+			Console.WriteLine($" Giriş Tarihi : {yeniUrun4.CreateTime}");
 		}
 	}
 }
