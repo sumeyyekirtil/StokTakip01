@@ -23,7 +23,7 @@
 	}
 	internal class Program
 	{
-		static void Main()//string[] args
+		static void Main(string[] args)
 		{
 			Console.WriteLine("Stok-Takip!");
 			Stok stok = new(); //yeni değer atama işlemi
